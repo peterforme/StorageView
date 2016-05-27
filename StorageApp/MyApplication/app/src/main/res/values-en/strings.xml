@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">fkDd</string>
+    <string name="launcher_name">@string/app_name</string>
+
+    <string name="storage_already_used">used space：</string>
+    <string name="storage_available">available space：</string>
+</resources>

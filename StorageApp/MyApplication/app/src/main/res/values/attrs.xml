@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="storageView">
+        <attr name="usedRate" format="integer"/>
+        <attr name="totalText" format="string|reference"/>
+        <attr name="totalTextSize" format="dimension"/>
+        <attr name="leftText" format="string|reference"/>
+        <attr name="leftTextSize" format="dimension"/>
+        <attr name="rightText" format="string|reference"/>
+        <attr name="rightTextSize" format="dimension"/>
+        <attr name="st_paddingLeft" format="dimension"/>
+        <attr name="st_paddingRight" format="dimension"/>
+        <attr name="paddingTotalRectWidth" format="dimension"/>
+        <attr name="st_paddingTop" format="dimension"/>
+        <attr name="st_paddingBottom" format="dimension"/>
+        <attr name="paddingRectUsedHeight" format="dimension"/>
+        <attr name="paddingReclUsedWidth" format="dimension"/>
+        <attr name="paddingUsedRecrWidth" format="dimension"/>
+        <attr name="paddingRecrAvailableWidth" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CBAlignTextView">
+        <attr name="punctuationConvert" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="JustifyTextView">
+        <attr name="character_space" format="dimension"> </attr>
+        <attr name="line_space" format="dimension"></attr>
+        <attr name="align_chars" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="IndicatorView">
+        <attr name="pointCount" format="integer" />
+        <attr name="pointView" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeRefreshLayout">
+        <attr name="direction">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="both" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="menuitem">
+        <attr name="mtitle" format="string|reference" />
+        <attr name="msubtitle" format="string" />
+        <attr name="micon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="mtitlebar">
+        <attr name="mBarTitle" format="string" />
+        <attr name="mBarMenu" format="string" />
+        <attr name="mBarHaveMenu" format="boolean" />
+        <attr name="mStyle" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadFrameLayout">
+        <attr name="emptyView" format="reference" />
+        <attr name="errorView" format="reference" />
+        <attr name="loadingView" format="reference" />
+    </declare-styleable>
+
+</resources>

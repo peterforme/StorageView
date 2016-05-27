@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015 [1076559197@qq.com | tchen0707@gmail.com]
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License”);
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+-->
+
+<resources>
+
+    <color name="dlo_text_color_write">#FFFFFF</color>
+    <color name="dlo_text_color_dark">#3a3a3a</color>
+    <color name="color_43639e">#43639e</color>
+    <color name="player_container_bg">#FFDDDDDD</color>
+    
+    <color name="dlo_text_color_black">#FF000000</color>
+    <color name="dlo_text_color_white">#FFFFFF</color>
+    <color name="dlo_text_color_gray">#949494</color>
+    <color name="zds_text_color_red">#FFCE1616</color>
+    <color name="zds_activity_color_bg">#FFf7f7f7</color>
+    <color name="zds_setting_frame_divide_bg">#FFA2A2A2</color>
+    
+    <color name="account_text_color_black">#FF000000</color>
+    <color name="account_text_color_blue_319dfc">#319DFC</color>
+    <color name="account_button_bg_color_blue_d7d7d7">#D7D7D7</color>
+    <color name="account_button_bg_color_blue_2f90db">#2F90BD</color>
+    
+    <color name="color_3a3a3a">#3a3a3a</color>
+    <color name="color_0090ff">#0090FF</color>
+    <color name="color_c9c9c9">#C9C9C9</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+    <color name="transprent">#00000000</color>
+    
+    <color name="colorPrimary">#0090ff</color>
+    <color name="colorPrimaryDark">#0090ff</color>
+    <color name="colorAccent">#fdfdfd</color>
+    <color name="theme_color">@color/colorPrimary</color>
+    
+    <color name="color_fdfdfd">#F9FDFDFD</color>
+    <color name="color_d7d7d7">#d7d7d7</color>
+    
+    
+    <color name="main_blue_light">#3F56B5</color>
+    <color name="main_blue_dark">#30459E</color>
+    <color name="main_white">#FFFFFF</color>
+    <color name="main_black">#000000</color>
+    <color name="main_black_grey">#292929</color>
+    <color name="main_light_black_grey">#6D6D6D</color>
+    
+    <color name="icon_enabled">#FFFFFFFF</color>
+    <color name="icon_disabled">#FF63727B</color>
+
+    <color name="new_hot_tab">#ffefefef</color>
+    <color name="tab_line">#ffd6d6d6</color>
+
+    <color name="item9">#ff545454</color>
+    <color name="item6">#ffdddddd</color>
+    <color name="item3">#ff7f7f7f</color>
+
+    <color name="red">#FF0000</color>
+    <color name="black">#000000</color>
+
+    <color name="player_model_select">#ff1996df</color>
+
+    <color name="storage_background">#FFFFFF</color>
+    <color name="storage_used">#00AEEF</color>
+    <color name="storage_available">#D7D7D7</color>
+
+</resources>

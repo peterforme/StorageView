@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StorageApp</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="storage_already_used">已用空间：</string>
+    <string name="storage_available">可用空间：</string>
+
+</resources>
