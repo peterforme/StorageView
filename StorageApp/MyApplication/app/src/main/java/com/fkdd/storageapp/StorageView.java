@@ -1,4 +1,4 @@
-package com.fkdd.storageapp;
+package com.dlodlo.main.widget;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -10,6 +10,8 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
 
+import com.dlodlo.store.R;
+import com.dxdassistant.util.LOG;
 
 /**
  * Created by Peter on 2016/5/25.
@@ -96,16 +98,15 @@ public class StorageView extends View {
         rightTextSize =  (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, typedArray.getDimension(R.styleable.storageView_rightTextSize, 16), getResources().getDisplayMetrics());
 
         //all padding
-        st_paddingLeft = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, typedArray.getDimension(R.styleable.storageView_st_paddingLeft, 10), getResources().getDisplayMetrics());
-        st_paddingRight = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, typedArray.getDimension(R.styleable.storageView_st_paddingRight, 10), getResources().getDisplayMetrics());
-        paddingTotalRectWidth = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, typedArray.getDimension(R.styleable.storageView_paddingTotalRectWidth, 10), getResources().getDisplayMetrics());
-        st_paddingTop = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, typedArray.getDimension(R.styleable.storageView_st_paddingTop, 10), getResources().getDisplayMetrics());
-        st_paddingBottom = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, typedArray.getDimension(R.styleable.storageView_st_paddingBottom, 15), getResources().getDisplayMetrics());
-        paddingRectUsedHeight = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, typedArray.getDimension(R.styleable.storageView_paddingRectUsedHeight, 10), getResources().getDisplayMetrics());
-        paddingReclUsedWidth = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, typedArray.getDimension(R.styleable.storageView_paddingReclUsedWidth, 10), getResources().getDisplayMetrics());
-        paddingUsedRecrWidth = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, typedArray.getDimension(R.styleable.storageView_paddingUsedRecrWidth, 20), getResources().getDisplayMetrics());
-        paddingRecrAvailableWidth = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, typedArray.getDimension(R.styleable.storageView_paddingRecrAvailableWidth, 10), getResources().getDisplayMetrics());
-
+        st_paddingLeft =  (int)typedArray.getDimension(R.styleable.storageView_st_paddingLeft, TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,15,getResources().getDisplayMetrics()));
+        st_paddingRight = (int)typedArray.getDimension(R.styleable.storageView_st_paddingRight, TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,15,getResources().getDisplayMetrics()));
+        paddingTotalRectWidth = (int)typedArray.getDimension(R.styleable.storageView_paddingTotalRectWidth, TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,10,getResources().getDisplayMetrics()));
+        st_paddingTop = (int)typedArray.getDimension(R.styleable.storageView_st_paddingTop, TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,10,getResources().getDisplayMetrics()));
+        st_paddingBottom = (int)typedArray.getDimension(R.styleable.storageView_st_paddingBottom, TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,15,getResources().getDisplayMetrics()));
+        paddingRectUsedHeight = (int)typedArray.getDimension(R.styleable.storageView_paddingRectUsedHeight, TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,10,getResources().getDisplayMetrics()));
+        paddingReclUsedWidth = (int)typedArray.getDimension(R.styleable.storageView_paddingReclUsedWidth, TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,5,getResources().getDisplayMetrics()));
+        paddingUsedRecrWidth = (int)typedArray.getDimension(R.styleable.storageView_paddingUsedRecrWidth, TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,15,getResources().getDisplayMetrics()));
+        paddingRecrAvailableWidth = (int)typedArray.getDimension(R.styleable.storageView_paddingRecrAvailableWidth, TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,5,getResources().getDisplayMetrics()));
 
         totalBound = new Rect();
         mPaint.setTextSize(totalTextSize);
@@ -177,6 +178,7 @@ public class StorageView extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
+        LOG.pwh("onDraw");
         //整个背景
         mPaint.setColor(getResources().getColor(R.color.storage_background));
         canvas.drawRect(0, 0, getMeasuredWidth(), getMeasuredHeight(), mPaint);
